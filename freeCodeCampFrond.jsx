@@ -72,4 +72,106 @@
         }
       }; 
 
-      11. 
+      11. const ChildComponent = () => {
+        return (
+          <div>
+            <p>I am the child</p>
+          </div>
+        );
+      };
+      
+      class ParentComponent extends React.Component {
+        constructor(props) {
+          super(props);
+        }
+        render() {
+          return (
+            <div>
+              <h1>I am the parent</h1>
+              { /* Change code below this line */ }
+            <ChildComponent/>                            // добавил стрелочную функцию для отображения
+      
+              { /* Change code above this line */ }
+            </div>
+          );
+        }
+      };
+
+      12. const TypesOfFruit = () => {
+        return (
+          <div>
+            <h2>Fruits:</h2>
+            <ul>
+              <li>Apples</li>
+              <li>Blueberries</li>
+              <li>Strawberries</li>
+              <li>Bananas</li>
+            </ul>
+          </div>
+        );
+      };
+      
+      const Fruits = () => {
+        return (
+          <div>
+            { /* Change code below this line */ }
+      <TypesOfFruit/>
+      
+            { /* Change code above this line */ }
+          </div>
+        );
+      };
+      
+      class TypesOfFood extends React.Component {
+        constructor(props) {
+          super(props);
+        }
+      
+        render() {
+          return (
+            <div>
+              <h1>Types of Food:</h1>
+              { /* Change code below this line */ }
+      <Fruits/>
+              { /* Change code above this line */ }
+            </div>
+          );
+        }
+      };
+
+      13. class Fruits extends React.Component {
+        constructor(props) {
+          super(props);
+        }
+        render() {
+          return (
+            <div>
+              <h2>Fruits:</h2>
+              { /* Change code below this line */ }
+      <NonCitrus/>                                       // два этих кампонента где-то закулисами редактора
+      <Citrus/>
+      
+              { /* Change code above this line */ }
+            </div>
+          );
+        }
+      };
+      
+      class TypesOfFood extends React.Component {
+        constructor(props) {
+           super(props);
+        }
+        render() {
+          return (
+            <div>
+              <h1>Types of Food:</h1>
+              { /* Change code below this line */ }
+      <Fruits/>                                           // затем всё это в другой компонент вкладываем)
+              { /* Change code above this line */ }
+              <Vegetables />
+            </div>
+          );
+        }
+      };
+      
+      14. 
