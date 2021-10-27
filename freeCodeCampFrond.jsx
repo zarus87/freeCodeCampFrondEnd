@@ -44,3 +44,32 @@
           <hr />
         </div>
       );  
+
+      7. const MyComponent = function() {
+        // Change code below this line
+      return (                                        //  первый способ создания обьекта в реакте
+        <div>строка текста!</div>
+      );
+      
+      
+        // Change code above this line
+      }
+
+      10. class MyComponent extends React.Component {
+        constructor(props) {
+          super(props);
+        }
+        render() {
+          // Change code below this line
+      return (                                           // второй способ создания обьекта в реакте
+        <div>
+      <h1>Hello React!</h1>
+      </div>
+      );
+      
+      
+          // Change code above this line
+        }
+      }; 
+
+      11. 
