@@ -14,4 +14,33 @@
     </ul>
     </div>
 
-    3. 
+    3. const JSX = (
+        <div>
+          <h1>This is a block of JSX</h1>
+          {/*комент в react*/}            // комент в react
+          <p>Here's a subtitle</p>
+        </div>
+      );
+
+    4. const JSX = (
+        <div>
+          <h1>Hello World</h1>
+          <p>Lets render this to the DOM</p>
+        </div>
+      );
+      ReactDOM.render(JSX,document.getElementById('challenge-node') )   // указываю с помощью команды что ходим отображать на экране
+      // Change code below this line
+
+    5. const JSX = (
+        <div className='myDiv'>   // в реакте вместо class используется className
+          <h1>Add a class to this div</h1>
+        </div>
+      );  
+
+    6. const JSX = (
+        <div>
+          <h2>Welcome to React!</h2> <br />   // самозакрывающиеся тэги
+          <p>Be sure to close all tags!</p>
+          <hr />
+        </div>
+      );  
