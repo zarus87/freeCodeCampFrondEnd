@@ -72,7 +72,9 @@
         }
       }; 
 
-      11. const ChildComponent = () => {
+
+
+11.     const ChildComponent = () => {
         return (
           <div>
             <p>I am the child</p>
@@ -97,7 +99,9 @@
         }
       };
 
-      12. const TypesOfFruit = () => {
+
+
+12.     const TypesOfFruit = () => {
         return (
           <div>
             <h2>Fruits:</h2>
@@ -139,7 +143,9 @@
         }
       };
 
-      13. class Fruits extends React.Component {
+
+
+ 13.     class Fruits extends React.Component {
         constructor(props) {
           super(props);
         }
@@ -174,23 +180,42 @@
         }
       };
       
-      14. class TypesOfFood extends React.Component {
-  constructor(props) {
-    super(props);
-  }
-  render() {
-    return (
-      <div>
+14.       class TypesOfFood extends React.Component {
+          constructor(props) {
+          super(props);
+                }
+          render() {
+          return (
+         <div>
         <h1>Types of Food:</h1>
         {/* Change code below this line */}
-<Fruits/>
-<Vegetables/>
+                   <Fruits/>
+                   <Vegetables/>
         {/* Change code above this line */}
-      </div>
-    );
-  }
-};
-ReactDOM.render(<TypesOfFood/>,document.getElementById('challenge-node'))
+          </div>
+             );
+               }
+                 };
+               ReactDOM.render(<TypesOfFood/>,document.getElementById('challenge-node'))
 // Change code below this line
 
-15. 
+15.      class MyComponent extends React.Component{         //мой реакт компанент написанный полностью мной
+  constructor(props){
+  super(props);
+  }
+  render(){
+  return (
+    <div id="challenge-node">
+  <h1>My First React Component!</h1>
+  
+  </div>
+  
+  );
+  
+  
+  }
+  };
+  ReactDOM.render(<MyComponent/>, document.getElementById("challenge-node"));
+
+
+16.       
