@@ -246,4 +246,62 @@ class Calendar extends React.Component {
 };  
 
 
-17.       
+17.   const List = (props) => {
+  { /* Change code below this line */ }
+  return <p>{props.tasks.join(' ,  ')}</p>           // передача массива как свойства, ниже в list пишем что нам необходимо передать, и в этой строке
+  { /* Change code above this line */ }
+};
+
+class ToDo extends React.Component {
+  constructor(props) {
+    super(props);
+  }
+  render() {
+    return (
+      <div>
+        <h1>To Do Lists</h1>
+        <h2>Today</h2>
+        { /* Change code below this line */ }
+        <List tasks={["поиграть", "собака"]}/>
+        <h2>Tomorrow</h2>
+        
+        <List tasks={["кот", "пёс", "хоп-хэй"]}/>
+        { /* Change code above this line */ }
+      </div>
+    );
+  }
+};    
+
+
+18.     const ShoppingCart = (props) => {
+  return (
+    <div>
+      <h1>Shopping Cart Component</h1>
+    </div>
+  )
+};
+ShoppingCart.defaultProps = {items : 0}     // обьявление свойств по умолчанию
+
+
+
+19.     const Items = (props) => {
+  return <h1>Current Quantity of Items in Cart: {props.quantity}</h1>
+}
+
+Items.defaultProps = {
+  quantity: 0
+}
+
+class ShoppingCart extends React.Component {
+  constructor(props) {
+    super(props);
+  }
+  render() {
+    { /* Change code below this line */ }
+    return <Items quantity={10}/>;    // здесь переопределяется свойство по-умолчанию
+    { /* Change code above this line */ }
+  }
+};
+
+
+20.    
